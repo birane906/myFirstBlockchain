@@ -35,6 +35,8 @@ class Blochchain{
         let key = Object.keys(this.blocks)[Object.keys(this.blocks).length - 1];
         return this.blocks[key];
     }
-
-
 }
+
+let genesisBlock = new Block(null, ['genesis','block'], 1);
+let blockchain = new Blochchain(genesisBlock);
+console.log(blockchain.getLastBlock());
