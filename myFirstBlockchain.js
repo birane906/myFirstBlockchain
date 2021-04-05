@@ -39,4 +39,5 @@ class Blochchain{
 
 let genesisBlock = new Block(null, ['genesis','block'], 1);
 let blockchain = new Blochchain(genesisBlock);
-console.log(blockchain.getLastBlock());
+
+console.log(blockchain.getLastBlock(), blockchain.getLastBlock().getHash());
